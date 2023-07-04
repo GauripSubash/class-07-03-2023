@@ -1,0 +1,16 @@
+---
+title: "FemalePulse"
+format: html
+editor: visual
+---
+
+```{r}
+library(primer.data)
+library(tidyverse)
+```
+
+```{r}
+as_tibble(nhanes)
+```
+
+
