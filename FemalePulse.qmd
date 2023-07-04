@@ -10,7 +10,10 @@ library(tidyverse)
 ```
 
 ```{r}
-as_tibble(nhanes)
+x <- nhanes |> 
+  select(pulse, gender) |> 
+  drop_na() |> 
+  filter(gender == "Female")
 ```
 
 
